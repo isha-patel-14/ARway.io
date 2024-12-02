@@ -523,3 +523,75 @@
     margin-top: 50px;
     margin-left: 700px;
 }
+
+.part2{
+    color: white;
+    text-align: center;
+    margin-top:120px;
+}
+
+.h1{
+    font-size:40px;
+}
+
+.text1{
+    font-size:20px;
+    width:1020px;
+    margin-left:250px;
+    margin-top:5px;
+}
+
+.cards_three{
+    margin-top:50px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.card1{
+    width: 350px;
+}
+
+.card2{
+    width: 350px;
+}
+
+.card3{
+    width: 350px;
+}
+
+.c1{
+    height:220px;   
+}
+
+.c2{
+    height:240px;
+}
+
+.text2{
+    color: white;
+    font-size: 25px;
+    font-weight:600;
+    margin-top: 30px;
+}
+
+.text3{
+    color: white;
+    margin-top:20px;
+    font-size:18px;
+    line-height: 1.5;
+}
+
+.text4{
+    color: white;
+    font-size: 25px;
+    font-weight:600;
+    margin-top: 10px;
+}
+
+.text5{
+    color: white;
+    margin-top:20px;
+    font-size:18px;
+    line-height: 1.5;
+}
