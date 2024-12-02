@@ -697,3 +697,56 @@
     overflow: hidden;
 }
 
+.text7{
+    margin-top:80px;
+    text-align: center;
+}
+
+.text7>h1{
+    font-size: 40px;
+}
+
+.text7>p{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.c_1{
+    background-color:#001328 ;
+    color: white;
+    border: 2px solid #2a4dbf;
+    border-radius:20px;
+    width: 25%;
+    height: 350px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    /* padding-left: 50px; */
+    padding-right: 30px;
+}
+
+.c_img{
+    text-align: center;
+}
+
+.c_1>h1{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.c_1>p{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 25px;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight:300;
+}
+
+.img-card{
+    margin-top: 50px;
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+}
