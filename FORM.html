@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#283f85;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background:white;
+            color: bblacklue;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        label {
+            font-weight:500;
+            display: block;
+            margin-bottom: 5px;
+            color: black;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #b1b1b1;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        button {
+            width: 30%;
+            margin-left: 140px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #053160;
+        }
+    </style>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault(); 
+
+            
+            const firstName = document.getElementById('fname').value;
+            const password = document.getElementById('password').value;
+            const location = document.getElementById('location').value;
+
+            localStorage.setItem('firstName', firstName);
+            localStorage.setItem('password', password);
+            localStorage.setItem('location', location);
+
+            
+            alert('Login successful! Redirecting to the main page.');
+            window.location.href = 'index.html';
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+    <form onsubmit="handleLogin(event)">
+
+        <img style="margin-left:135px;"  src="https://maps-studio.nextechar.com/static/media/ARWay_Primary_Logo_Brand.29d0f5c5660fbacaa54b132f57e509f8.svg" alt="">
+        <p style="text-align: center; margin-bottom:30px; font-size:25px;">Log In</p>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter your first name">
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter your 6-digit password">
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter your location">
+
+        <button type="submit">Login</button>
+
+    </form>
+</body>
+
+</html>
