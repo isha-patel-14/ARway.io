@@ -1179,9 +1179,14 @@
 }
 
 .c2{
+    cursor: pointer;
     margin-top: 15px;
     color: white;
     font-size: 17px;
     font-weight:500 ;
     line-height:2;
+}
+
+.c2>p:hover{
+    color: rgb(84, 84, 251);
 }
